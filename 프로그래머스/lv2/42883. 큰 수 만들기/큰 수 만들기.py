@@ -34,7 +34,8 @@ def solution(number, k):
                 if k <= 0 or len(answer) == 0:
                     break # 비교 그만
         answer.append(i)
+         # 리스트가 비어있지 않고, k<=0일 때(비교 끝이고, 더이상 제거할 필요 없을 때)
         
     answer = answer[0:-k] if k > 0 else answer
-    # 이 경우까지 고려해야 되네 999 k=1
+    # 이 경우까지 고려해야 되네 999 k=1 (비교를 못할 때)
     return ''.join(answer)
