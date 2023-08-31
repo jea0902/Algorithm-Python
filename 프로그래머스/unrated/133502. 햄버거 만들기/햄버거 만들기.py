@@ -33,7 +33,7 @@ def solution(ingredient):
     cnt = 0
     for i in ingredient:
         s.append(i)
-        if s[-4:] == [1, 2, 3, 1]: # ??? 근데 이 로직이라면, 딱히 6번째 재료가 안쌓여도 returb 올리겠는데?
+        if s[-4:] == [1, 2, 3, 1]: # ??? 근데 이 로직이라면, 딱히 6번째 재료가 안쌓여도 returb 올리겠는데? - 그럼 문제에 굳이 6번째랑, 9번째라는 건 왜 쓴건지??
             cnt += 1
             for _ in range(4):
                 s.pop()
